@@ -1,0 +1,194 @@
+@charset "UTF-08";
+@font-face {
+    font-family: 'Oswald';
+    src: url('fontes/Oswald.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Idroid';
+    src: url('fontes/idroid.otf') format('opentype');
+}
+
+/*
+   PODEMOS DECLARAR VARIÁVEIS PARA COR EM CSS. O COMANDO FICA ASSIM:
+    ex:
+
+   :root {
+    --nomeDaVariavel: codigo da cor;
+   }
+
+   :root {
+    --cor0: #c5ebd6;
+   }
+   QUANDO FOR USAR ESSA COR UTILIZAMOS DESSA FORMA
+
+   background-color: var(--cor0);
+
+   TAMBÉM PODEMOS DECLARAR VARIÁVEIS PARA FONTE.
+   ex: 
+
+   :root {
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+   }
+
+   EXEMPLO DE USO DESSA FORMA DE USO DA VARIÁVEL.
+
+   font-family: var(--font-padrao);
+*/
+
+body {
+    background-color: #c0c781;
+    margin: 0;
+}
+
+header {
+    background-image: linear-gradient(to top, #195734, #3BD27F);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    min-height: 180px;
+}
+
+header > h1 {
+    padding: 10px;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    text-shadow: 2px 2px 10px #195734;
+}
+
+header > p {
+    text-align: center;
+    color: #c9e7d6;
+    text-shadow: 2px 2px 10px #06160d;
+}
+
+header > a {
+    text-align: left;
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    padding: 10px;
+    transition-duration: 0.3s;
+}
+
+header > a:hover {
+    border-radius: 3px;
+    background-color: #4aad77;
+    color: #06160d;
+}
+
+article {
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 30px;
+    width: 90%;
+    max-width: 1000px;
+    min-width: 320px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.582);
+}
+article > h1 {
+    margin-top: 0;
+    padding: 20px 0px 0px 20px;
+    font-family: 'Idroid', sans-serif;
+    color: #2D6948;
+    font-size: 25px;
+
+}
+
+article > p {
+    text-align: justify;
+    padding: 0px 20px 0px 20px;
+}
+
+.mainh2 {
+    padding: 0px 0px 0px 30px;
+    font-family: 'Idroid';
+    color: #2D6948;
+    font-size: 20px;
+    background-image: linear-gradient(to right, #beecd3, transparent);
+}
+
+span {
+    font-weight: bold;
+    color: #183826;
+}
+p {
+    font:16px Verdana, Geneva, Tahoma, sans-serif;
+    text-indent: 25px;
+    line-height: 1.7em;
+}
+
+picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#video {
+    height: 500px;
+    background-color: #06160d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ancora {
+    font-weight: bold;
+    color: #183826;
+    background-color: #60cf92a8;
+    text-decoration: none;
+}
+
+.ancora:hover {
+    text-decoration: underline;
+}
+
+#hlist {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: #103a22;
+    padding: 10px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+#list {
+    width: 90%;
+    margin: auto;
+    background-color:#3BD27F;
+    text-align: justify;
+    border-radius: 15px;
+}
+
+#list > p {
+    padding: 10px;
+}
+
+ul {
+    list-style-type: '✔  ';
+    columns: 2;
+}
+
+abbr {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#fim {
+    padding: 10px 10px 30px 10px;
+}
+
+footer {
+    height: 100%;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #06160d;
+    padding: 15px;
+}
+
+.spanfooter {
+    color: white;
+}
